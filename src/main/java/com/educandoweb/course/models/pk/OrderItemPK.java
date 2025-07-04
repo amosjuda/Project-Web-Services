@@ -1,7 +1,7 @@
-package com.educandoweb.course.entities.pk;
+package com.educandoweb.course.models.pk;
 
-import com.educandoweb.course.entities.Order;
-import com.educandoweb.course.entities.Product;
+import com.educandoweb.course.models.Order;
+import com.educandoweb.course.models.Product;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
