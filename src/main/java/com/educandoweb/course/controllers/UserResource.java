@@ -39,4 +39,11 @@ public class UserResource {
         User obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
     }
+
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<User> delete(@PathVariable long id){
+        service.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
 }
