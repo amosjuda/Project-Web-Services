@@ -1,4 +1,4 @@
-package com.educandoweb.course.entities;
+package com.educandoweb.course.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
