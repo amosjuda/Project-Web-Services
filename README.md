@@ -21,7 +21,6 @@ Este projeto foi construído com as seguintes tecnologias e ferramentas:
 * **Maven**: Ferramenta de gerenciamento de dependências e construção do projeto.
 * **H2 Database**: Banco de dados em memória utilizado para testes e desenvolvimento local.
 * **PostgreSQL**: Banco de dados relacional robusto, configurado para ambientes de desenvolvimento e produção.
-* **Heroku (Opcional)**: Plataforma de nuvem para deploy e hospedagem da aplicação.
 
 ---
 
@@ -60,11 +59,6 @@ Durante o desenvolvimento deste projeto, explorei e implementei diversas funcion
 * **Exceções Personalizadas**: Criação de exceções customizadas (`ResourceNotFoundException`, `DatabaseException`) para cenários específicos da aplicação, tornando o tratamento de erros mais semântico.
 * **`@ControllerAdvice` e `@ExceptionHandler`**: Implementação de um manipulador de exceções global para centralizar o tratamento de erros e retornar respostas padronizadas (`StandardError`) para o cliente da API.
 * **Tratamento de Erros de Banco de Dados**: Captura e tratamento de exceções como `EmptyResultDataAccessException` e `DataIntegrityViolationException` para fornecer feedback mais amigável ao usuário.
-
-### Deploy em Nuvem (Heroku)
-* **Perfis de Aplicação**: Configuração de diferentes perfis (test, dev, prod) para gerenciar configurações específicas de ambiente, como conexão com banco de dados e variáveis de ambiente.
-* **Heroku CLI**: Utilização da interface de linha de comando para autenticação, configuração e deploy contínuo da aplicação na plataforma Heroku.
-* **Variáveis de Configuração**: Gerenciamento de variáveis de ambiente do Heroku (`DATABASE_URL`, `JWT_SECRET`, `JWT_EXPIRATION`) para dados sensíveis e configurações dinâmicas.
 
 ---
 
